@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sp.css">
+</head>
+
+<body>
+  <!-- header ==========================================================-->
+  <header>
+    <div class="header-container flex">
+      <div class="header-left flex">
+        <!-- サイトタイトル -->
+        <h1 id="sitetitle">
+          <a href="#">
+            <img class="title-img" src="images/logo.png" alt="">
+          </a>
+        </h1>
+        <!-- グローバルメニュー -->
+        <nav id="global-menu">
+          <ul class="gm-ul flex">
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#business">BUSINESS</a></li>
+            <li><a href="#company">COMPANY</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- 資料請求ボタン -->
+      <div class="documentreq">
+        <a href="#">資料請求</a>
+      </div>
+    </div>
+  </header>
+  <!-- main============================================================ -->
+  <!-- メイン画像 -->
+  <div id="keyvisual">
+    <img src="images/keyimg.jpg" alt="">
+  </div>
+
+  <main class="wrapper">
+    <!-- 「NEWS」 -->
+    <section id="news">
+      <h2>NEWS</h2>
+      <span class="title-span">ニュース</span>
+
+      <dl class="news-dl flex">
+        <div class="news-li">
+          <dt>2022.01.01 <span class="category">NEWS</span> </dt>
+          <dd>タイトルタイトルタイトルタイトルタイトル</dd>
+        </div>
+        <div class="news-li">
+          <dt>2022.01.01 <span class="category">PRESS</span> </dt>
+          <dd>タイトルタイトルタイトルタイトルタイトル</dd>
+        </div>
+        <div class="news-li">
+          <dt>2022.01.01 <span class="category">NEWS</span> </dt>
+          <dd>タイトルタイトルタイトルタイトルタイトル</dd>
+        </div>
+      </dl>
+
+    </section>
+    <!-- 「ABOUT」 -->
+    <section id="about" class="flex">
+      <img src="images/about.jpg" alt="">
+      <div class="about-content">
+        <h2>ABOUT</h2>
+        <span class="title-span">私たちについて</span>
+        <p class="about-p">
+          テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト<br>
+          テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト<br>
+          テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト<br>
+        </p>
+      </div>
+    </section>
+    <!-- 「BUSINESS」 -->
+    <section id="business">
+      <h2>BUSINESS</h2>
+      <span class="title-span">事業内容</span>
+
+      <div class="buz flex">
+        <div class="buz-img1 slide-left">
+          <h3>- ウェブ制作</h3>
+          <img src="images/business1.jpg" alt="">
+        </div>
+        <div class="buz-img slide-right">
+          <h3>- アプリ開発</h3>
+          <img src="images/business2.jpg" alt="">
+        </div>
+        <div class="buz-img1 slide-left">
+          <h3>- インターネットメディア事業</h3>
+          <img src="images/business3.jpg" alt="">
+        </div>
+        <div class="buz-img slide-right">
+          <h3>- ソーシャル企画・運営</h3>
+          <img src="images/business4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- 「COMPANY」 -->
+    <section id="company">
+      <div class="company-container">
+        <h2>COMPANY</h2>
+        <span class="title-span">会社情報</span>
+
+        <dl class="comp-content">
+          <div class="company-dl flex">
+            <dt>会社名</dt>
+            <dd>ウェブデザイン会社</dd>
+          </div>
+          <div class="company-dl flex">
+            <dt>所在地</dt>
+            <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+          </div>
+          <div class="company-dl flex">
+            <dt>代表</dt>
+            <dd>✕✕✕✕</dd>
+          </div>
+          <div class="company-dl flex">
+            <dt>設立</dt>
+            <dd>2022年1月1日</dd>
+          </div>
+          <div class="company-dl flex">
+            <dt>資本金</dt>
+            <dd>3,000,000円</dd>
+          </div>
+          <div class="company-dl flex">
+            <dt>事業内容</dt>
+            <dd>
+              ウェブ制作<br>
+              アプリ開発<br>
+              インターネットメディア事業<br>
+              ソーシャル企画・運営等<br>
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <img class="comp-img" src="images/company.jpg" alt="">
+    </section>
+  </main>
+  <!-- ページトップボタン -->
+  <div id="page-top">
+    <a href=""></a>
+  </div>
+  <!-- footer========================================================== -->
+  <footer>
+    <div class="footer-container flex wrapper">
+      <!-- フッターサイトタイトル -->
+      <div id="footer-sitetitle">
+        <a href="#">
+          <img class="title-img" src="images/logo.png" alt="">
+        </a>
+      </div>
+      <!-- アクセス -->
+      <div id="access">
+        <p>
+          Web Entertainment Design Inc. <br>
+          West Building 3F <br>
+          9-99 Sakuragaokacho Shibuya-ku <br>
+          Tokyo, Japan 150-0031 <br>
+          T/99-9999-9999 <br>
+        </p>
+      </div>
+    </div>
+
+    <p id="copyright" class="wrapper">&copy; Web Design Inc.</p>
+  </footer>
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/* ======================================================
+  全体
+========================================================*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MS Pゴシック", sans-serif;
+  color      : #383e45;
+  font-size  : 1.4rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor         : pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  width : 100%;
+  height: 100%;
+}
+
+
+/* 共通＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1032px;
+  padding: 0 1%;
+  margin: 0 auto;
+}
+
+/* ページトップボタン */
+main {
+  position: relative;
+}
+
+#page-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  position: relative;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+#page-top a::after {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  content:"";
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+/* header============================================== */
+header {
+  width : 100%;
+  height: 80px;
+}
+
+.header-container.flex {
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.header-left.flex {
+  align-items: center;
+}
+
+#sitetitle {
+  width      : 100px;
+  height     : 80px;
+  margin-left: 90px;
+}
+
+.title-img {
+  object-fit: contain;
+}
+
+.gm-ul li {
+  margin-left: 20px;
+}
+
+.documentreq {
+  width           : 200px;
+  height          : 80px;
+  background-color: #000;
+  color           : #fff;
+  text-align      : center;
+  line-height: 80px;
+}
+
+/* main================================================ */
+section {
+  margin-top: 120px;
+}
+/* メイン画像 */
+#keyvisual {
+  width:100vw;
+  height:600px;
+}
+
+#keyvisual img {
+  object-fit: cover;
+}
+
+/* タイトル */
+.title-span {
+  display: block;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.title-span::after  {
+  content: "";
+  width: 40px;
+  height:1px;
+  background-color: #000;
+  position: absolute;
+  bottom: -30px;
+  left:0;
+}
+
+/* 「NEWS」 */
+.news-dl.flex {
+  padding: 50px 0;
+  justify-content: space-between;
+}
+
+.news-li {
+  border-right: 1px solid #000;
+  padding: 1% 3% 1% 1%;
+}
+
+.news-li:last-child {
+  border-right: none;
+}
+
+.news-dl dt {
+  margin-bottom: 15px;
+}
+
+.category {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1%;
+}
+/* 「ABOUT」 */
+#about img {
+  width: 760px;
+  height: 400px;
+  object-fit: cover;
+  padding: 0 2%;
+}
+
+.about-p {
+  margin-top: 85px;
+}
+
+/* 「BUSINESS」 */
+.buz.flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buz-img,
+.buz-img1 {
+  width: 48%;
+  height: 263px;
+  position: relative;
+}
+
+.buz-img1 {
+  margin-top:100px;
+}
+
+.buz-img::after,
+.buz-img1::after {
+  position: absolute;
+	content: '';
+  width: 102%;
+  height: 270px;
+	top: 30px;
+	bottom: 0;
+	left: -5px;
+  box-shadow: inset 0 0 25px 25px #fff;
+}
+/* アニメーション */
+.slide-left {
+  animation: slide-left 1s ease-out 0s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slide-right 1s ease-out 0s 1 forwards;
+  opacity: 0;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 「COMPANY」 */
+#company {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.company-container {
+  background-color: #F0F0F0;
+  width: 567px;
+  height: 640px;
+  padding: 13% 5%;
+}
+
+.company-dl dt {
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+.comp-img {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+
+/* footer============================================== */
+footer {
+  width: 100%; 
+  background-color: #000;
+  color: #fff; 
+  padding: 3% 0;
+}
+
+.footer-container.flex {
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-bottom: 30px;
+}
+
+#footer-sitetitle {
+  width      : 100px;
+  height     : 80px;
+}
